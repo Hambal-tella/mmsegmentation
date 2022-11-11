@@ -21,7 +21,7 @@ def test_setr_up_head(capsys):
     head = SETRUPHead(
         in_channels=4,
         channels=2,
-        norm_cfg=dict(type='SyncBN'),
+        norm_cfg=dict(type='BN'),
         num_classes=19,
         init_cfg=dict(type='Kaiming'))
     super(SETRUPHead, head).init_weights()
