@@ -15,3 +15,5 @@ optimizer = dict(
     weight_decay=0.0,
     paramwise_cfg=dict(custom_keys={'head': dict(lr_mult=10.)}))
 data = dict(samples_per_gpu=1)
+work_dir = './work_dirs/tutorial'
+gpu_ids = range(0, 1)
